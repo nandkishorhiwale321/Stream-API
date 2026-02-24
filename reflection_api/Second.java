@@ -27,6 +27,16 @@ public class Second {
 		 System.out.println(f.get(s));
 		 
 		 
+		 
+		 
+		 Method[] m = cl.getDeclaredMethods();
+		 for(Method me:m) {
+			 System.out.println(me);
+		 }
+		 Method m1=cl.getDeclaredMethod("getname", String.class);
+		 m1.setAccessible(true);
+		 Object res =m1.invoke(s,"yuvraj");
+		 System.out.println(res);
 		
 	}
 
@@ -37,5 +47,8 @@ class Student {
 	
 	private Student(String name) {
 		this.name=name;
+	}
+	private String getname(String name) {
+		return this.name=name;
 	}
 }

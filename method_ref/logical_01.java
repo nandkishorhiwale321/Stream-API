@@ -18,9 +18,9 @@ public class logical_01 {
 //		
 //		List<List<List<List<List<String>>>>> list5 =
 //		
-	      list3.stream().flatMap((i)-> {return i.stream();})
-	      .reduce(0,(k,j)->{return k+j;}).;
-		
+//	      list3.stream().flatMap((i)-> {return i.stream();})
+//	      .reduce((k,j)->{return k+j;}).forEach((i)->{System.out.println(i)};);
+//		
 		
 	}
 

@@ -20,7 +20,7 @@ public class Third {
 		cs4.setAccessible(true);
 		 
 		Actor act =(Actor)cs2.newInstance(5556565.02);
-		System.out.println();
+	
 		Actor act2 =(Actor)cs3.newInstance("harry");
 		Actor act3 = (Actor)cs4.newInstance(1201);
 		

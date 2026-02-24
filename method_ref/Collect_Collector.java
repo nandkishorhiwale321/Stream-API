@@ -28,8 +28,8 @@ public class Collect_Collector {
 class EvenColl implements Collector <Integer,List<Integer>,List<Integer>>{
 
 	@Override
-	public Supplier<List<Integer>> supplier() {
-		return ()->{return new Integer();};
+	public Supplier supplier() {
+		return ()->{return new Integer(null);};
 	}
 
 	@Override
